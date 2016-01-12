@@ -1,5 +1,5 @@
 [package]
-name = "protobuf-build"
+name = "protobuf_build"
 version = "0.1.0"
 authors = ["Paul Lietar <paul@lietar.net>"]
 build = "build.rs"
