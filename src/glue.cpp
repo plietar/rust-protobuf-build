@@ -50,8 +50,11 @@ extern "C" {
 
         FileDescriptorProto desc;
         file->CopyTo(&desc);
+
+        // Missing in old versions of libprotoc
+        // Not really required by rust-protobuf anyway
         //file->CopyJsonNameTo(&desc);
-        file->CopySourceCodeInfoTo(&desc);
+        //file->CopySourceCodeInfoTo(&desc);
 
         std::string out;
         desc.SerializeToString(&out);
