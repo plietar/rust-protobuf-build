@@ -5,7 +5,7 @@ authors = ["Paul Lietar <paul@lietar.net>"]
 build = "build.rs"
 
 [dependencies]
-protobuf = "~1.0.15"
+protobuf = "~1.4.3"
 libc = "~0.2.4"
 
 [build-dependencies]
